@@ -40,7 +40,97 @@ html{
     width: 90%;
     max-width: 62.5rem;
     margin: 6.25rem auto;
+    display: flex;
+    justify-content: center;
 }
 .sectionLogin{
+    width: 350px;
     background-color: var(--color3);
+    border-radius: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 9rem 3rem auto 5rem;
+    grid-template-areas: "a a a a"
+                         "b b b b"
+                         "c c c c"
+                         "d d d d";
+    justify-items: center;
+    box-shadow: 0px 0px 5px .5px rgba(107, 107, 107, 0.801)
 }
+.icon-user-main{
+    width: 6.25rem;
+    grid-area: a;
+    align-self: center;
+}
+.icon-user, 
+.icon-lock{
+    width: 1.125rem;
+    height: 1.125rem;
+    grid-area: a;
+    align-self: center;
+}
+.sectionLogin > h1{
+    font-family: var(--fuente1);
+    color: var(--color6);
+    text-transform: uppercase;
+    font-size: 1.75rem;
+    grid-area: b;
+}
+form[name="mainForm"]{
+    width: calc(100% - 3rem);
+    grid-area: c;
+    display: flex;
+    flex-flow: column nowrap;
+}
+input[type="text"], 
+input[type="password"]{
+    border: none;
+    margin: .5rem 0rem;
+    font-size: 1.25rem;
+    padding: .5rem 2.5rem;
+    border-radius: .25rem;
+}
+
+.user-name, 
+.user-lock{
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+}
+.user-name img, 
+.user-lock img{
+    position: absolute;
+    left: 0;
+    top: 9.5px;
+    margin: 0.625rem;
+}
+
+input[type="text"]::placeholder, 
+input[type="password"]::placeholder{
+   font-family: var(--fuente4);
+   font-weight: 300;
+   color: #3d3d3d;
+}
+input[type="submit"]{
+    border: none;
+    margin: .5rem 0rem;
+    font-size: 1.25rem;
+    padding: .5rem 1.5rem;
+    border-radius: .25rem;
+    background-color: var(--color4);
+    font-family: var(--fuente3);
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--color1);
+    margin-top: 1rem;
+    letter-spacing: .125rem;
+}
+.sectionLogin > a{
+    grid-area: d;
+    font-family: var(--fuente3);
+    color: var(--color6);
+    justify-self: flex-end;
+    margin-right: 1.5rem;
+    letter-spacing: .125rem;
+}
+
