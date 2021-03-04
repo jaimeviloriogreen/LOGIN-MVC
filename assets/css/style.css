@@ -1,0 +1,46 @@
+@font-face{
+    font-family: OperatorMono-bold;
+    src: url('/assets/fonts/OperatorMonoBold.otf') format('woff');
+}
+@font-face{
+    font-family: OperatorMono-light;
+    src: url('/assets/fonts/OperatorMonoLight.otf') format('woff');
+}
+@font-face{
+    font-family: OperatorMono-medium;
+    src: url('/assets/fonts/OperatorMonoMedium.otf') format('woff');
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+:root{
+    --color1: #ffffff;
+    --color2: #000000;
+    --color3: #dcdcdc;
+
+    /* Colors */
+    --color4: #2b7de9;
+    --color5: #e53935; 
+    --color6: #3d3d3d;
+
+    /* Font Family */
+    --fuente1: OperatorMono-light;
+    --fuente2: OperatorMono-medium;
+    --fuente3: OperatorMono-bold;
+    --fuente4: 'Open Sans', sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+.container{
+    width: 90%;
+    max-width: 62.5rem;
+    margin: 6.25rem auto;
+}
+.sectionLogin{
+    background-color: var(--color3);
+}
